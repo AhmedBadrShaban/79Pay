@@ -22,20 +22,20 @@
       "icon": "fas fa-play",
       "text": "Watch Demo"
     },
-    "stats": [
-      {
-        "number": "50K+",
-        "label": "Active Users"
-      },
-      {
-        "number": "99.9%",
-        "label": "Uptime"
-      },
-      {
-        "number": "24/7",
-        "label": "Support"
-      }
-    ],
+ "stats": [
+  {
+    "number": "2025",
+    "label": "Launch"
+  },
+  {
+    "number": "First",
+    "label": "UAE Market"
+  },
+  {
+    "number": "100%",
+    "label": "Innovation"
+  }
+],
     "card": {
        "number": "1234 5678 9101 1121",
       "expiry": "12/28",
