@@ -274,11 +274,6 @@ class EnhancedHeroManager {
         this.hideServiceDisplay(serviceDisplay);
       }
     });
-
-    // Show default service after animation
-    setTimeout(() => {
-      this.updateServiceDisplay("security", serviceDisplay);
-    }, 2000);
   }
 
   updateServiceDisplay(serviceName, display) {
