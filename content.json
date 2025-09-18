@@ -1,0 +1,269 @@
+{
+  "navigation": {
+    "logo": "79Pay",
+    "menuItems": [
+      { "href": "#home", "text": "Home" },
+      { "href": "#features", "text": "Solutions" },
+      { "href": "#about", "text": "About" },
+      { "href": "#partners", "text": "Partners" },
+      { "href": "#contact", "text": "Contact" }
+    ],
+    "ctaButton": "Get Started"
+  },
+  "hero": {
+    "gradientText": "The Future of",
+    "titleMain": "Digital Payments",
+    "subtitle": "Experience seamless, secure, and lightning-fast transactions with 79Pay. Join thousands of users who trust us with their digital payments.",
+    "primaryButton": {
+      "icon": "fas fa-rocket",
+      "text": "Get Early Access"
+    },
+    "secondaryButton": {
+      "icon": "fas fa-play",
+      "text": "Watch Demo"
+    },
+    "stats": [
+      {
+        "number": "50K+",
+        "label": "Active Users"
+      },
+      {
+        "number": "99.9%",
+        "label": "Uptime"
+      },
+      {
+        "number": "24/7",
+        "label": "Support"
+      }
+    ],
+    "card": {
+       "number": "1234 5678 9101 1121",
+      "expiry": "12/28",
+      "holder": "JOHN DOE"
+    }
+    ,
+  "services": [
+    {
+      "id": "security",
+      "title": "Advanced Security",
+      "description": "Bank-level encryption and fraud protection",
+      "icon": "fas fa-shield-alt"
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile Availability",
+      "description": "Seamless access to payments anytime, anywhere through mobile platforms",
+      "icon": "fas fa-mobile-alt"
+    },
+    {
+      "id": "investment",
+      "title": "Investment Opportunities",
+      "description": "Explore strategic fintech investment opportunities with 79Pay",
+      "icon": "fas fa-chart-pie"
+    },
+    {
+      "id": "analytics",
+      "title": "Smart Analytics",
+      "description": "Gain valuable insights with intelligent reporting and real-time analytics",
+      "icon": "fas fa-chart-line"
+    }
+  ]
+  },
+  "features": {
+    "header": {
+      "title": "What's Coming",
+      "subtitle": "Revolutionary fintech solutions currently in implementation - launching late 2025"
+    },
+    "items": [
+      {
+        "icon": "fas fa-credit-card",
+        "title": "Next-Gen Payment Cards",
+        "description": "Advanced payment card solutions designed for the modern digital economy. Coming with innovative features and seamless user experiences."
+      },
+      {
+        "icon": "fas fa-store",
+        "title": "Smart Payment Processing",
+        "description": "Innovative payment processing infrastructure designed for businesses of all sizes. Built for the future of commerce and digital transactions."
+      },
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "PCI DSS Certified Security",
+        "description": "Enterprise-grade security architecture with PCI DSS certification designed to protect digital transactions. Built with the highest industry standards and best practices in mind."
+      },
+      {
+        "icon": "fas fa-mobile-alt",
+        "title": "Mobile Experience",
+        "description": "Modern mobile applications designed for intuitive user experiences. Coming with cutting-edge features for seamless digital interactions."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "Smart Analytics",
+        "description": "Intelligent reporting and insights platform designed to provide valuable business intelligence. Coming with innovative data visualization and analytics capabilities."
+      },
+      {
+        "icon": "fas fa-globe",
+        "title": "Future-Ready Platform",
+        "description": "Scalable infrastructure designed for global expansion and cross-border capabilities. Built to integrate with international financial networks and payment systems."
+      }
+    ]
+  },
+  "about": {
+    "title": "About 79Pay",
+    "descriptions": [
+      "79Pay is an emerging fintech company focused on building the next generation of digital payment solutions. We're developing innovative technology that will transform how businesses and individuals interact with financial services. Our mission is to create secure, efficient, and user-friendly payment experiences for the modern digital economy."
+     ],
+    "features": [
+      { "icon": "fas fa-map-marked-alt", "text": "UAE Market Entry Planned" },
+      { "icon": "fas fa-handshake", "text": "Seeking Strategic Partnerships" },
+      { "icon": "fas fa-shield-alt", "text": "PCI DSS Certified Security" },
+      { "icon": "fas fa-users", "text": "Experienced Team" },
+      { "icon": "fas fa-lightbulb", "text": "Innovation-Driven Approach" }
+    ],
+    "button": {
+      "icon": "fas fa-arrow-right",
+      "text": "Learn More"
+    },
+    "visual": {
+      "title": "Platform Preview",
+      "status": "Demo",
+      "metrics": [
+        { "value": "PCI DSS", "label": "Certified" },
+        { "value": "Early 2026", "label": "Launch" }
+      ]
+    }
+  },
+  "partners": {
+    "header": {
+      "title": "Partnership Opportunities",
+      "subtitle": "Seeking strategic partnerships with forward-thinking financial institutions and technology companies"
+    },
+    "trustItems": [
+      {
+        "icon": "fas fa-university",
+        "title": "Banking Partnerships",
+        "description": "Seeking strategic partnerships with financial institutions to build innovative payment solutions and services."
+      },
+      {
+        "icon": "fas fa-certificate",
+        "title": "PCI DSS Compliance",
+        "description": "PCI DSS certified and designed with full regulatory compliance in mind, meeting all necessary standards and requirements for secure financial operations."
+      },
+      {
+        "icon": "fas fa-globe-americas",
+        "title": "Global Vision",
+        "description": "Developing solutions with international standards and best practices to enable future global expansion and integration."
+      }
+    ],
+    "badges": [
+      { "icon": "fas fa-shield-alt", "text": "PCI DSS\nCertified" },
+      { "icon": "fas fa-cog", "text": "In\nImplementation" },
+      { "icon": "fas fa-handshake", "text": "Partnership\nReady" },
+      { "icon": "fas fa-calendar-alt", "text": "Late 2025\nLaunch" }
+    ]
+  },
+  "cta": {
+    "title": "Join the Future of Payments",
+    "subtitle": "Be part of the next generation of digital payment innovation launching Q4 2025. We're looking for forward-thinking partners to help shape the future of fintech in the UAE and beyond.",
+    "buttons": {
+      "primary": {
+        "icon": "fas fa-envelope",
+        "text": "Get Updates"
+      },
+      "secondary": {
+        "icon": "fas fa-handshake",
+        "text": "Partnership Inquiry"
+      }
+    }
+  },
+  "contact": {
+    "header": {
+      "title": "Get in Touch",
+      "subtitle": "Interested in learning more about 79Pay or exploring partnership opportunities? We'd love to hear from you and discuss how we can work together."
+    },
+    "info": [
+      {
+        "icon": "fas fa-envelope",
+        "title": "General Inquiries",
+        "value": "info@79-pay.com"
+      },
+      {
+        "icon": "fas fa-handshake",
+        "title": "Partnerships",
+        "value": "partnerships@79-pay.com"
+      },
+      {
+        "icon": "fas fa-map-marker-alt",
+        "title": "Location",
+        "value": "United Arab Emirates"
+      }
+    ],
+    "form": {
+      "fields": [
+        { "type": "text", "placeholder": "Your Name", "required": true },
+        { "type": "email", "placeholder": "Your Email", "required": true },
+        { "type": "text", "placeholder": "Company Name", "required": false },
+        { "type": "textarea", "placeholder": "Tell us about your interest or partnership opportunity", "required": true, "rows": 5 }
+      ],
+      "button": {
+        "icon": "fas fa-paper-plane",
+        "text": "Get in Touch"
+      }
+    }
+  },
+  "footer": {
+     "description": "An emerging fintech company developing innovative digital payment solutions for the future. Launching late 2025 in the UAE market with PCI DSS certified cutting-edge financial technology.",
+    "social": [
+      { "platform": "linkedin", "icon": "fab fa-linkedin", "href": "#" },
+      { "platform": "twitter", "icon": "fab fa-twitter", "href": "#" },
+      { "platform": "facebook", "icon": "fab fa-facebook", "href": "#" },
+      { "platform": "instagram", "icon": "fab fa-instagram", "href": "#" }
+    ],
+    "contact": [
+      { "icon": "fas fa-envelope", "text": "info@79-pay.com" },
+      { "icon": "fas fa-handshake", "text": "partnerships@79-pay.com" }
+    ],
+    "sections": [
+      {
+        "title": "Coming Soon",
+        "links": [
+          { "text": "Payment Solutions", "href": "#" },
+          { "text": "Digital Wallet Platform", "href": "#" },
+          { "text": "Merchant Services", "href": "#" },
+          { "text": "Mobile Applications", "href": "#" },
+          { "text": "Partnership Program", "href": "#" },
+          { "text": "Developer Tools", "href": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "text": "About 79Pay", "href": "#about" },
+          { "text": "Contact Us", "href": "#contact" },
+          { "text": "Partnership Opportunities", "href": "#partners" },
+          { "text": "Updates & News", "href": "#" },
+          { "text": "Early Access Program", "href": "#" },
+          { "text": "Investment Opportunities", "href": "#" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "text": "Privacy Policy", "href": "#" },
+          { "text": "Terms of Service", "href": "#" },
+          { "text": "Cookie Policy", "href": "#" },
+          { "text": "Disclaimer", "href": "#" },
+          { "text": "Security", "href": "#" },
+          { "text": "Compliance", "href": "#" }
+        ]
+      }
+    ],
+    "bottom": {
+      "copyright": "© 2025 79pay. All rights reserved.",
+      "license": "CBUAE RPSP License Application in Progress"
+    }
+  },
+  "meta": {
+    "title": "79pay - Digital Payment Solutions",
+    "description": "79pay - Revolutionary digital payment solutions for the modern world. Secure, fast, and innovative fintech services."
+  }
+} 

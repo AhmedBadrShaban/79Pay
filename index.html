@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/svg/Transparent Var2.svg" alt="79Pay" class="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#partners" class="nav-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link cta-button"></a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">عربي</button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Loading Animation -->
+        <div class="hero-loading" id="heroLoading">
+        <div class="loader"></div>
+    </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Text Content -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text" data-content="gradient-text"></span>
+                        <span class="hero-title-main" data-content="hero-title-main"></span>
+                    </h1>
+                    <p class="hero-subtitle" data-content="hero-subtitle"></p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" data-content="primary-button">
+                            <i class="" data-content="primary-button-icon"></i>
+                            <span class="btn-text" data-content="primary-button-text"></span>
+                        </button>
+                        <button class="btn-secondary" data-content="secondary-button">
+                            <i class="" data-content="secondary-button-icon"></i>
+                            <span class="btn-text" data-content="secondary-button-text"></span>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-content="stat-1-number"></div>
+                            <div class="stat-label" data-content="stat-1-label"></div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-content="stat-2-number"></div>
+                            <div class="stat-label" data-content="stat-2-label"></div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-content="stat-3-number"></div>
+                            <div class="stat-label" data-content="stat-3-label"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Content -->
+                <div class="hero-visual">
+                    <!-- Floating Background Elements -->
+                    <div class="floating-bg">
+                        <div class="float-orb"></div>
+                        <div class="float-orb"></div>
+                        <div class="float-orb"></div>
+                    </div>
+
+                    <!-- Enhanced Card -->
+                    <div class="card-scene">
+                        <div class="card-3d">
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <div class="card-logo" data-content="card-logo">
+                                        <img src="assets/svg/Original Var1.svg" alt="79Pay" class="nav-logo-img">
+                                    </div>
+                                    <div class="contactless-waves">
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                        <div class="wave"></div>
+                                    </div>
+                                </div>
+
+                                <div class="card-chip"></div>
+
+                                <div class="card-number" data-content="card-number">1234 5678 9101 1121</div>
+
+                                <div class="card-footer">
+                                    <div class="card-expiry">
+                                        <div class="card-expiry-label">VALID THRU</div>
+                                        <div class="card-expiry-date" data-content="card-expiry">12/28</div>
+                                    </div>
+                                    <div class="card-holder" data-content="card-holder">JOHN DOE</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Buttons -->
+                        <div class="service-buttons">
+                            <button class="service-btn" data-service="security">
+                                <i class="fas fa-shield-alt"></i>
+                            </button>
+                            <button class="service-btn" data-service="mobile">
+                                <i class="fas fa-mobile-alt"></i>
+                            </button>
+                            <button class="service-btn" data-service="analytics">
+                                <i class="fas fa-chart-line"></i>
+                            </button>
+                            <button class="service-btn" data-service="investment">
+                                <i class="fas fa-coins"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Service Info Display -->
+                    <div class="service-info" id="serviceInfoDisplay">
+                        <i class="service-icon fas fa-shield-alt"></i>
+                        <h3 class="service-title">Bank-Level Security</h3>
+                        <p class="service-desc">Your transactions are protected with military-grade encryption and
+                            advanced
+                            fraud detection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"></h2>
+                <p class="section-subtitle"></p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="feature-title"></h3>
+                    <p class="feature-description"></p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="feature-title"></h3>
+                    <p class="feature-description"></p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="feature-title"></h3>
+                    <p class="feature-description"></p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="feature-title"></h3>
+                    <p class="feature-description"></p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="feature-title"></h3>
+                    <p class="feature-description"></p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="feature-title"></h3>
+                    <p class="feature-description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title"></h2>
+                    <p class="about-description"></p>
+                    <p class="about-description"></p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class=""></i>
+                            <span></span>
+                        </div>
+                        <div class="about-feature">
+                            <i class=""></i>
+                            <span></span>
+                        </div>
+                        <div class="about-feature">
+                            <i class=""></i>
+                            <span></span>
+                        </div>
+                        <div class="about-feature">
+                            <i class=""></i>
+                            <span></span>
+                        </div>
+                        <div class="about-feature">
+                            <i class=""></i>
+                            <span></span>
+                        </div>
+                        <div class="about-feature">
+                            <i class=""></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">
+                        <i class=""></i>
+                        <span class="btn-text"></span>
+                    </button>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="visual-container">
+                        <div class="visual-card">
+                            <div class="visual-header">
+                                <div class="visual-title"></div>
+                                <div class="visual-status"></div>
+                            </div>
+                            <div class="visual-chart">
+                                <div class="chart-bar" style="height: 40%"></div>
+                                <div class="chart-bar" style="height: 70%"></div>
+                                <div class="chart-bar" style="height: 55%"></div>
+                                <div class="chart-bar" style="height: 85%"></div>
+                                <div class="chart-bar" style="height: 60%"></div>
+                                <div class="chart-bar" style="height: 90%"></div>
+                            </div>
+                            <div class="visual-metrics">
+                                <div class="metric">
+                                    <div class="metric-value"></div>
+                                    <div class="metric-label"></div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value"></div>
+                                    <div class="metric-label"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners & Trust Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"></h2>
+                <p class="section-subtitle"></p>
+            </div>
+            <div class="trust-metrics">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="trust-title"></h3>
+                    <p class="trust-description"></p>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="trust-title"></h3>
+                    <p class="trust-description"></p>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-icon">
+                        <i class=""></i>
+                    </div>
+                    <h3 class="trust-title"></h3>
+                    <p class="trust-description"></p>
+                </div>
+            </div>
+            <div class="compliance-badges" data-aos="fade-up" data-aos-delay="400">
+                <div class="badge">
+                    <i class=""></i>
+                    <span></span>
+                </div>
+                <div class="badge">
+                    <i class=""></i>
+                    <span></span>
+                </div>
+                <div class="badge">
+                    <i class=""></i>
+                    <span></span>
+                </div>
+                <div class="badge">
+                    <i class=""></i>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title"></h2>
+                <p class="cta-subtitle"></p>
+                <div class="cta-buttons">
+                    <button class="btn-primary large">
+                        <i class=""></i>
+                        <span class="btn-text"></span>
+                    </button>
+                    <button class="btn-outline large">
+                        <i class=""></i>
+                        <span class="btn-text"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"></h2>
+                <p class="section-subtitle"></p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class=""></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class=""></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class=""></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" rows="5" placeholder="" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">
+                            <i class=""></i>
+                            <span class="btn-text"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/svg/Grey.svg" alt="79Pay" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description"></p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class=""></i></a>
+                        <a href="#" class="social-link"><i class=""></i></a>
+                        <a href="#" class="social-link"><i class=""></i></a>
+                        <a href="#" class="social-link"><i class=""></i></a>
+                    </div>
+                    <div class="footer-contact">
+                        <p><i class=""></i> <span class="contact-text"></span></p>
+                        <p><i class=""></i> <span class="contact-text"></span></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title"></h4>
+                    <ul class="footer-links">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title"></h4>
+                    <ul class="footer-links">
+                        <li><a href="#about"></a></li>
+                        <li><a href="#contact"></a></li>
+                        <li><a href="#partners"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title"></h4>
+                    <ul class="footer-links">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright"></p>
+                <p class="license"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Professional Modal -->
+    <div id="professionalModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-icon" id="modalIcon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p class="modal-message" id="modalMessage"></p>
+                <div class="modal-input-container" id="modalInputContainer" style="display: none;">
+                    <input type="email" class="modal-input" id="modalInput" placeholder="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary modal-btn" id="modalCancel" style="display: none;"></button>
+                <button class="btn-primary modal-btn" id="modalConfirm"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.min.js"></script>
+    <script src="hero-manager.js"></script>
+    <script src="content-manager.js"></script>
+    <!-- <script src="hero-manager.js"></script> -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

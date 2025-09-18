@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit Version - Card Services UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f6f8fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card-orbit-container {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      margin: 40px auto 0 auto;
+    }
+    .orbit-card {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px; height: 140px;
+      background: linear-gradient(135deg, #2341a0 80%, #3e5ed7 100%);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(34,61,255,0.10);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: #fff;
+      padding: 24px 28px;
+    }
+    .orbit-card .card-logo {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    .orbit-card .card-number {
+      letter-spacing: 0.2em;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+    .orbit-card .card-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+    .orbit-icons {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none;
+    }
+    .orbit-icon {
+      position: absolute;
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      color: #2341a0;
+      pointer-events: auto;
+      border: none;
+      transition: background 0.2s, color 0.2s;
+      cursor: pointer;
+      outline: none;
+    }
+    .orbit-icon:focus, .orbit-icon:hover {
+      background: #2341a0;
+      color: #fff;
+    }
+    .orbit-icon[data-service="security"]   { top: 8%;  left: 50%; transform: translate(-50%, 0); }
+    .orbit-icon[data-service="mobile"]     { top: 50%; left: 92%; transform: translate(-50%, -50%); }
+    .orbit-icon[data-service="analytics"]  { top: 92%; left: 50%; transform: translate(-50%, -100%); }
+    .orbit-icon[data-service="investment"] { top: 50%; left: 8%;  transform: translate(-50%, -50%); }
+    @media (max-width: 500px) {
+      .card-orbit-container { width: 95vw; height: 320px; }
+      .orbit-card { width: 90vw; height: 120px; padding: 18px 12px; }
+      .orbit-icon { width: 36px; height: 36px; font-size: 1.1rem; }
+      .orbit-icon[data-service="security"]   { top: 4%;  left: 50%; }
+      .orbit-icon[data-service="mobile"]     { top: 50%; left: 96%; }
+      .orbit-icon[data-service="analytics"]  { top: 96%; left: 50%; }
+      .orbit-icon[data-service="investment"] { top: 50%; left: 4%; }
+    }
+    .service-description {
+      margin-top: 32px;
+      min-height: 48px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(34,61,255,0.06);
+      padding: 18px 24px;
+      font-size: 1.08rem;
+      color: #2341a0;
+      max-width: 350px;
+      text-align: center;
+      transition: background 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="margin-top:32px; color:#2341a0; font-weight:700;">Orbit Version</h2>
+  <div class="card-orbit-container">
+    <div class="orbit-card">
+      <div class="card-logo">79pay</div>
+      <div class="card-number">**** **** **** 7979</div>
+      <div class="card-info">
+        <span>John Doe</span>
+        <span>12/28</span>
+      </div>
+    </div>
+    <div class="orbit-icons">
+      <button class="orbit-icon" data-service="security" title="Bank-Grade Security"><i class="fas fa-shield-alt"></i></button>
+      <button class="orbit-icon" data-service="mobile" title="Mobile-First Experience"><i class="fas fa-mobile-alt"></i></button>
+      <button class="orbit-icon" data-service="analytics" title="Smart Analytics"><i class="fas fa-chart-line"></i></button>
+      <button class="orbit-icon" data-service="investment" title="Investment Features"><i class="fas fa-coins"></i></button>
+    </div>
+  </div>
+  <div class="service-description" id="service-description">Select a service to learn more.</div>
+  <script>
+    const descriptions = {
+      security: "<b>Bank-Grade Security:</b> PCI DSS certified with military-grade encryption protecting every transaction.",
+      mobile: "<b>Mobile-First Experience:</b> Intuitive mobile apps designed for seamless payments on-the-go.",
+      analytics: "<b>Smart Analytics:</b> Real-time insights and reporting to help you understand your financial patterns.",
+      investment: "<b>Investment Features:</b> Smart investment tools and digital asset management coming soon."
+    };
+    document.querySelectorAll('.orbit-icon').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('service-description').innerHTML = descriptions[btn.dataset.service];
+      });
+    });
+  </script>
+</body>
+</html> 

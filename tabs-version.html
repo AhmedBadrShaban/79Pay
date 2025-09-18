@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Version - Card Services UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f6f8fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .tabs-card-container {
+      width: 350px;
+      margin: 40px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .tabs-card {
+      width: 100%;
+      background: linear-gradient(135deg, #2341a0 80%, #3e5ed7 100%);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(34,61,255,0.10);
+      color: #fff;
+      padding: 28px 32px 22px 32px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .tabs-card .card-logo {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    .tabs-card .card-number {
+      letter-spacing: 0.2em;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+    .tabs-card .card-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+    .service-tabs {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      gap: 8px;
+    }
+    .service-tab {
+      flex: 1 1 0;
+      background: #fff;
+      color: #2341a0;
+      border: none;
+      border-radius: 12px 12px 0 0;
+      padding: 10px 0 6px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.05rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      outline: none;
+      box-shadow: 0 2px 8px rgba(34,61,255,0.04);
+    }
+    .service-tab i {
+      font-size: 1.3rem;
+      margin-bottom: 2px;
+    }
+    .service-tab.active, .service-tab:focus {
+      background: #2341a0;
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(34,61,255,0.10);
+    }
+    .service-description {
+      width: 100%;
+      min-height: 48px;
+      background: #fff;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 2px 12px rgba(34,61,255,0.06);
+      padding: 18px 24px;
+      font-size: 1.08rem;
+      color: #2341a0;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    @media (max-width: 500px) {
+      .tabs-card-container { width: 98vw; }
+      .tabs-card { padding: 18px 8vw 14px 8vw; }
+      .service-description { padding: 14px 8vw; }
+      .service-tab { font-size: 0.98rem; padding: 8px 0 4px 0; }
+      .service-tab i { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <h2 style="margin-top:32px; color:#2341a0; font-weight:700;">Tabs Version</h2>
+  <div class="tabs-card-container">
+    <div class="tabs-card">
+      <div class="card-logo">79pay</div>
+      <div class="card-number">**** **** **** 7979</div>
+      <div class="card-info">
+        <span>John Doe</span>
+        <span>12/28</span>
+      </div>
+    </div>
+    <div class="service-tabs">
+      <button class="service-tab active" data-service="security" title="Bank-Grade Security"><i class="fas fa-shield-alt"></i><span>Security</span></button>
+      <button class="service-tab" data-service="mobile" title="Mobile-First Experience"><i class="fas fa-mobile-alt"></i><span>Mobile</span></button>
+      <button class="service-tab" data-service="analytics" title="Smart Analytics"><i class="fas fa-chart-line"></i><span>Analytics</span></button>
+      <button class="service-tab" data-service="investment" title="Investment Features"><i class="fas fa-coins"></i><span>Invest</span></button>
+    </div>
+    <div class="service-description" id="service-description"><b>Bank-Grade Security:</b> PCI DSS certified with military-grade encryption protecting every transaction.</div>
+  </div>
+  <script>
+    const descriptions = {
+      security: "<b>Bank-Grade Security:</b> PCI DSS certified with military-grade encryption protecting every transaction.",
+      mobile: "<b>Mobile-First Experience:</b> Intuitive mobile apps designed for seamless payments on-the-go.",
+      analytics: "<b>Smart Analytics:</b> Real-time insights and reporting to help you understand your financial patterns.",
+      investment: "<b>Investment Features:</b> Smart investment tools and digital asset management coming soon."
+    };
+    document.querySelectorAll('.service-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.service-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        document.getElementById('service-description').innerHTML = descriptions[this.dataset.service];
+      });
+    });
+  </script>
+</body>
+</html> 

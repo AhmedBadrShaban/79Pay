@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Version - Card Services UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f6f8fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .carousel-card-container {
+      width: 350px;
+      margin: 40px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .carousel-card {
+      width: 100%;
+      background: linear-gradient(135deg, #2341a0 80%, #3e5ed7 100%);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(34,61,255,0.10);
+      color: #fff;
+      padding: 28px 32px 22px 32px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .carousel-card .card-logo {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    .carousel-card .card-number {
+      letter-spacing: 0.2em;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+    .carousel-card .card-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+    .carousel-wrapper {
+      width: 100%;
+      position: relative;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+    }
+    .carousel-arrow {
+      background: #fff;
+      color: #2341a0;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 8px rgba(34,61,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      z-index: 2;
+      outline: none;
+    }
+    .carousel-arrow:active, .carousel-arrow:focus {
+      background: #2341a0;
+      color: #fff;
+    }
+    .carousel-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 16px;
+      width: 100%;
+      padding: 8px 0;
+      scrollbar-width: none;
+    }
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+    .service-slide {
+      min-width: 220px;
+      max-width: 220px;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(34,61,255,0.06);
+      padding: 18px 18px 14px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #2341a0;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .service-slide i {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      color: #2341a0;
+    }
+    .service-slide .slide-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 1.08rem;
+    }
+    .service-slide .slide-desc {
+      font-size: 0.98rem;
+      opacity: 0.92;
+    }
+    @media (max-width: 500px) {
+      .carousel-card-container { width: 98vw; }
+      .carousel-card { padding: 18px 8vw 14px 8vw; }
+      .carousel-track { gap: 10px; }
+      .service-slide { min-width: 80vw; max-width: 80vw; padding: 14px 8vw 10px 8vw; }
+    }
+  </style>
+</head>
+<body>
+  <h2 style="margin-top:32px; color:#2341a0; font-weight:700;">Carousel Version</h2>
+  <div class="carousel-card-container">
+    <div class="carousel-card">
+      <div class="card-logo">79pay</div>
+      <div class="card-number">**** **** **** 7979</div>
+      <div class="card-info">
+        <span>John Doe</span>
+        <span>12/28</span>
+      </div>
+    </div>
+    <div class="carousel-wrapper">
+      <button class="carousel-arrow" id="carousel-left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+      <div class="carousel-track" id="carousel-track">
+        <div class="service-slide">
+          <i class="fas fa-shield-alt"></i>
+          <div class="slide-title">Bank-Grade Security</div>
+          <div class="slide-desc">PCI DSS certified with military-grade encryption protecting every transaction.</div>
+        </div>
+        <div class="service-slide">
+          <i class="fas fa-mobile-alt"></i>
+          <div class="slide-title">Mobile-First Experience</div>
+          <div class="slide-desc">Intuitive mobile apps designed for seamless payments on-the-go.</div>
+        </div>
+        <div class="service-slide">
+          <i class="fas fa-chart-line"></i>
+          <div class="slide-title">Smart Analytics</div>
+          <div class="slide-desc">Real-time insights and reporting to help you understand your financial patterns.</div>
+        </div>
+        <div class="service-slide">
+          <i class="fas fa-coins"></i>
+          <div class="slide-title">Investment Features</div>
+          <div class="slide-desc">Smart investment tools and digital asset management coming soon.</div>
+        </div>
+      </div>
+      <button class="carousel-arrow" id="carousel-right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+  <script>
+    const track = document.getElementById('carousel-track');
+    document.getElementById('carousel-left').onclick = () => {
+      track.scrollBy({ left: -240, behavior: 'smooth' });
+    };
+    document.getElementById('carousel-right').onclick = () => {
+      track.scrollBy({ left: 240, behavior: 'smooth' });
+    };
+    // Optional: swipe support for mobile
+    let startX = 0;
+    track.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
+    });
+    track.addEventListener('touchend', e => {
+      let endX = e.changedTouches[0].clientX;
+      if (startX - endX > 40) track.scrollBy({ left: 240, behavior: 'smooth' });
+      if (endX - startX > 40) track.scrollBy({ left: -240, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html> 
