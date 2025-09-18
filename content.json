@@ -37,7 +37,7 @@
   }
 ],
     "card": {
-       "number": "1234 5678 9101 1121",
+       "number": "1234 **** **** ****",
       "expiry": "12/28",
       "holder": "JOHN DOE"
     }
@@ -56,17 +56,17 @@
       "icon": "fas fa-mobile-alt"
     },
     {
-      "id": "investment",
-      "title": "Investment Opportunities",
-      "description": "Explore strategic fintech investment opportunities with 79Pay",
-      "icon": "fas fa-chart-pie"
-    },
-    {
       "id": "analytics",
       "title": "Smart Analytics",
       "description": "Gain valuable insights with intelligent reporting and real-time analytics",
       "icon": "fas fa-chart-line"
-    }
+    },
+      {
+        "id": "investment",
+        "title": "Investment Opportunities",
+        "description": "Explore strategic fintech investment opportunities with 79Pay",
+        "icon": "fas fa-chart-pie"
+      }
   ]
   },
   "features": {

@@ -26,16 +26,17 @@
     "ctaButton": "ابدأ الآن"
   },
   "hero": {
+    "gradientText":"مستقبل",
     "titleMain": "الجيل القادم من المدفوعات الرقمية",
     "subtitle": "نحن نبني حلول تقنية مالية مبتكرة ستحول المدفوعات الرقمية والخدمات المالية. حالياً في مرحلة التطبيق - الإطلاق في السوق الإماراتية أواخر 2025.",
-    "primaryButton": {
-      "icon": "fas fa-envelope",
-      "text": "احصل على الوصول المبكر"
-    },
-    "secondaryButton": {
-      "icon": "fas fa-handshake",
-      "text": "شارك معنا"
-    },
+  "primaryButton": {
+    "icon": "fas fa-rocket",
+    "text": "كن أول المستفيدين"
+  },
+  "secondaryButton": {
+    "icon": "fas fa-play",
+    "text": "شارك معنا"
+  },
     "stats": [
       {
         "number": "2025",
@@ -51,9 +52,8 @@
       }
     ],
     "card": {
-      "logo": "79باي",
-      "number": "**** **** **** 7979",
-      "name": "أحمد محمد",
+       "number": "7979 **** **** **** ",
+      "holder": "أحمد محمد",
       "expiry": "12/28"
     },
     "services": [
